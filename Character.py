@@ -47,8 +47,7 @@ class Character:
         return f"Character('{self.name}', {self.power}, {self.game_time_minutes})"
 
     def __add__(self, other):
-        self.power += other
-        return self
+        return self.power + other
 
 
 _mario = Character("Mario", 80, 110)
@@ -74,7 +73,10 @@ print('_mario >= 70?', _mario >= 70, _mario)
 print('_mario >= 80?', _mario >= 80, _mario)
 print('_mario >= 80?', _mario >= _luigi, _mario, _luigi)
 _mario = _mario + 5
-print(_mario)
+print(_mario + 5)
+x = 80
+print(x + 5)
+
 
 print([_mario, _luigi, _mario])
 
